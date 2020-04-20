@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Cirilo Filipino Kainan`,
+    description: `A humble, unpretentious, family-owned eatery serving Cirilo's take on classic hearty Filipino food.`,
+    author: `Rachelle Ragasa`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
