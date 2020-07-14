@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { above } from "../../styles"
+import { above, whiteBackground } from "../../styles"
 
 const Menu = ({ open }) => {
   return (
@@ -23,9 +23,10 @@ const Container = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fff;
+  ${whiteBackground}
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   height: 100vh;
+  width: 100%;
   text-align: left;
   padding: 2rem;
   position: absolute;
@@ -33,14 +34,9 @@ const Container = styled.nav`
   left: 0;
   transition: transform 0.3s ease-in-out;
 
-  @media (max-width: 576px) {
-    width: 100%;
-  }
-
   a {
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 0.5rem;
     color: #0d0c1d;
     text-decoration: none;
