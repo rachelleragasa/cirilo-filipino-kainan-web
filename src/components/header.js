@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { semplicitaProMedium, above } from "../styles"
-import Menu from "../components/navigation/menu"
-import Hamburger from "../components/navigation/hamburger"
+import FacebookIcon from "../assets/icons/facebook.svg"
+import InstagramIcon from "../assets/icons/instagram.svg"
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
-
   return (
     <Container>
       <div>
@@ -16,49 +14,41 @@ const Header = () => {
           <Logo>Cirilo</Logo>
         </StyledLink>
       </div>
-      <MobileNavigation className="mobile-nav">
-        <Menu open={open} setOpen={setOpen} />
-        <Hamburger open={open} setOpen={setOpen} />
-      </MobileNavigation>
-      <DesktopNavigation className="desktop-nav">
-        <List>
-          <ListItem>
-            <StyledLink to="/our-story">Our Story</StyledLink>
-          </ListItem>
-          <ListItem>
-            <StyledLink to="/our-story">Menu</StyledLink>
-          </ListItem>
-        </List>
-      </DesktopNavigation>
+      <SocialIcons>
+        <li>
+          <a
+            href="https://www.facebook.com/cirilofilipinokainan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={FacebookIcon}
+              alt="Click here to view our facebook page"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/cirilofilipinokainan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={InstagramIcon}
+              alt="Click here to view our instagram page"
+            />
+          </a>
+        </li>
+      </SocialIcons>
     </Container>
   )
 }
 
 const Container = styled.header`
-  padding: 20px;
+  padding: 15px 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  ${above.tabletLarge`
-    padding: 15px 40px;
-  `}
-
-  .mobile-nav {
-    display: block;
-
-    ${above.tabletLarge`
-      display: none;
-    `}
-  }
-
-  .desktop-nav {
-    display: none;
-
-    ${above.tabletLarge`
-      display: block;
-    `}
-  }
 `
 
 const StyledLink = styled(Link)`
@@ -73,33 +63,25 @@ const Logo = styled.div`
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 30px;
-
-  ${above.tabletLarge`
-    font-size: 24px;
-  `}
 `
 
-const DesktopNavigation = styled.nav``
-
-const List = styled.ul`
+const SocialIcons = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin: 0;
-`
-
-const ListItem = styled.li`
-  margin: 0 15px;
-
-  a {
-    ${above.tablet`
-      font-size: 12px;
-    `}
-  }
-`
-
-const MobileNavigation = styled.div`
+  justify-content: flex-end;
   flex-grow: 1;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-left: 20px;
+  }
+
+  img {
+    width: 20px;
+  }
 `
 
 Header.propTypes = {

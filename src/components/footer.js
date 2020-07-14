@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { above, color, greyBackground, semplicitaProMedium } from "../styles"
-import FacebookIcon from "../assets/icons/facebook.svg"
-import InstagramIcon from "../assets/icons/instagram.svg"
 
 const Footer = () => (
   <Container>
@@ -28,29 +26,6 @@ const Footer = () => (
         <p>eat@cirilofilipinokainan.co.uk</p>
       </div>
     </FooterInfo>
-    <ul>
-      <li>
-        <a
-          href="https://www.facebook.com/cirilofilipinokainan"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={FacebookIcon} alt="Click here to view our facebook page" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.instagram.com/cirilofilipinokainan"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={InstagramIcon}
-            alt="Click here to view our instagram page"
-          />
-        </a>
-      </li>
-    </ul>
     <div>© {new Date().getFullYear()} Cirilo Filipino Kainan</div>
   </Container>
 )
@@ -68,21 +43,6 @@ const Container = styled.footer`
   ${above.tabletLarge`
     padding: 40px 40px 20px 40px;
   `}
-
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    padding: 0;
-    margin: 20px auto;
-    width: 50px;
-  }
-
-  img {
-    width: 20px;
-  }
 `
 
 const FooterInfo = styled.div`
