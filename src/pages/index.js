@@ -56,8 +56,17 @@ const IndexPage = () => (
         <div></div>
       </DietaryAdvice>
     </Section>
+    <Map>
+      <img src="https://maps.googleapis.com/maps/api/staticmap?center=51.510807,-0.068217&zoom=14&size=640x200&scale=2&markers=color:green|51.510807,-0.068217&key=AIzaSyD5ImLSyn8RONTNEz2IV9R8jnIQ_b2-BIw" />
+    </Map>
   </Layout>
 )
+
+const Map = styled.div`
+  img {
+    width: 100vw;
+  }
+`
 
 const Section = styled.section`
   max-width: 1200px;
