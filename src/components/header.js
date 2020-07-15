@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { semplicitaProMedium, semplicitaProLight, above } from "../styles"
@@ -99,13 +98,5 @@ const SocialIcons = styled.ul`
     width: 20px;
   }
 `
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

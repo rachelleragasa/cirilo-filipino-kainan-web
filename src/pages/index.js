@@ -6,7 +6,7 @@ import background from "../images/coffee-shop-exterior.jpg"
 import background2 from "../images/coffee-landscape-fd7627dd1a3030240869c74bc496bda8.jpg"
 import takeawaymenu from "../assets/docs/cirilo-filipino-kainan-takeaway-menu.jpg"
 
-import { above, semplicitaProSemiBold, color } from "../styles"
+import { above, color } from "../styles"
 import { Parallax } from "react-parallax"
 
 const IndexPage = () => (
@@ -60,18 +60,18 @@ const Section = styled.section`
   width: 80%;
   margin: 0 auto;
   padding: 80px 0;
-
-  a {
-    text-decoration: none;
-    &:active,
-    &:focus,
-    &:visited {
-      color: ${color.black};
-    }
-  }
 `
 
 const TakeAwayMenu = styled.a`
+  text-decoration: none;
+  color: ${color.black};
+
+  &:active,
+  &:focus,
+  &:visited {
+    color: ${color.black};
+  }
+
   div {
     margin-bottom: 30px;
     border-bottom: 1px solid ${color.black};
@@ -80,6 +80,14 @@ const TakeAwayMenu = styled.a`
 `
 
 const DietaryAdvice = styled.a`
+  text-decoration: none;
+  color: ${color.black};
+
+  &:active,
+  &:focus,
+  &:visited {
+    color: ${color.black};
+  }
   div {
     margin-bottom: 30px;
     border-bottom: 1px solid ${color.black};

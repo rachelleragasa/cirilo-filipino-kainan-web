@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
 	body {
 		display: flex;
   		flex-direction: column;
-		${semplicitaProLight}
+		${semplicitaProLight};
 		font-size: 18px;
 		line-height: 30px;
 	}

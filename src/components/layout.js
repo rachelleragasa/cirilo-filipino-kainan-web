@@ -1,5 +1,4 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 
 import Header from "./header"
@@ -11,9 +10,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles />
-      <Helmet>
-        <link rel="stylesheet" href="https://use.typekit.net/xvb3cit.css" />
-      </Helmet>
       <Header />
       <div>
         <main>{children}</main>
