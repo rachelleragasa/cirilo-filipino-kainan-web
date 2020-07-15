@@ -22,8 +22,10 @@ const Footer = () => (
       </FooterColumn>
       <FooterColumn>
         <h3>Contact Us</h3>
-        <p>020 7702 2299</p>
-        <p>eat@cirilofilipinokainan.co.uk</p>
+        <a href="tel:020 7702 2299">020 7702 2299</a>
+        <a href="mailto:eat@cirilofilipinokainan.co.uk">
+          eat@cirilofilipinokainan.co.uk
+        </a>
       </FooterColumn>
     </FooterInfo>
     <div>© {new Date().getFullYear()} Cirilo Filipino Kainan</div>
@@ -67,9 +69,11 @@ const FooterInfo = styled.div`
     line-height: 24px;
   }
 
-  p {
+  a {
+    display: block;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 30px;
+    color: ${color.white};
 
     ${above.mobile`
       font-size: 14px;

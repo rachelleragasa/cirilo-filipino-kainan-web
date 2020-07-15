@@ -4,7 +4,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import background from "../images/coffee-shop-exterior.jpg"
 import background2 from "../images/coffee-landscape-fd7627dd1a3030240869c74bc496bda8.jpg"
-import takeawaymenu from "../assets/docs/cirilo-filipino-kainan-takeaway-menu.jpg"
+import takeawaymenu from "../assets/docs/cirilo-filipino-kainan-takeaway-menu.pdf"
+import dietaryadvice from "../assets/docs/cirilo-filipino-kainan-dietary-advice.pdf"
+import interior from "../images/cirilo-interior.jpg"
+import outside from "../images/cirilo-outside.jpg"
 
 import { above, color } from "../styles"
 import { Parallax } from "react-parallax"
@@ -12,8 +15,8 @@ import { Parallax } from "react-parallax"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Parallax bgImage={background} strength={500}>
-      <div style={{ height: 500 }}></div>
+    <Parallax bgImage={outside} strength={500}>
+      <div style={{ height: "90vh" }}></div>
     </Parallax>
     <Section>
       <ShortText>
@@ -21,7 +24,7 @@ const IndexPage = () => (
         Filipino Food.
       </ShortText>
     </Section>
-    <Parallax bgImage={background2} strength={500}>
+    <Parallax bgImage={interior} strength={500}>
       <div style={{ height: 500 }}></div>
     </Parallax>
     <Section>
@@ -44,7 +47,7 @@ const IndexPage = () => (
         food.{" "}
       </p>
       <DietaryAdvice
-        href={takeawaymenu}
+        href={dietaryadvice}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -61,9 +64,13 @@ const Section = styled.section`
   margin: 0 auto;
   padding: 80px 0;
 `
+const PhotoGallery = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+`
 
 const TakeAwayMenu = styled.a`
-  text-decoration: none;
   color: ${color.black};
 
   &:active,
@@ -80,7 +87,6 @@ const TakeAwayMenu = styled.a`
 `
 
 const DietaryAdvice = styled.a`
-  text-decoration: none;
   color: ${color.black};
 
   &:active,

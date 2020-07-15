@@ -103,6 +103,10 @@ const GlobalStyles = createGlobalStyle`
 			font-size: 22px;
 		`}
 	}
+
+	a {
+		text-decoration: none;
+	}
 	
 `
 
