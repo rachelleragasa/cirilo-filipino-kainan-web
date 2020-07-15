@@ -1,61 +1,51 @@
 import { css } from "styled-components"
 
 export const semplicitaProBold = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 7
-  font-style: normal;
+  font-family: "semplicitaprobold", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProBoldItalic = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "semplicitaprobolditalic", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProItalic = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  font-family: "semplicitaproitalic", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProLight = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-family: "semplicitaprolight", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProLightItalic = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-family: "semplicitaprolightitalic", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProMedium = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-family: "semplicitapromedium", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProMediumItalic = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 500;
-  font-style: italic;
+  font-family: "semplicitapromediumitalic", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProRegular = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "semplicitaproregular", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProSemiBold = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-family: "semplicitaprosemibold", sans-serif;
+  font-style: normal !important;
 `
 
 export const semplicitaProSemiBoldItalic = css`
-  font-family: semplicitapro, sans-serif;
-  font-weight: 600;
-  font-style: italic;
+  font-family: "semplicitaprosemibolditalic", sans-serif;
+  font-style: normal !important;
 `

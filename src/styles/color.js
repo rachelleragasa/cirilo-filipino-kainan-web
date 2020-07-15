@@ -2,6 +2,7 @@ import { css } from "styled-components"
 
 export const color = {
   white: "#fff",
+  black: "#000",
 }
 
 export const greyBackground = css`

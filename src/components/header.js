@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { semplicitaProMedium, above } from "../styles"
+import { semplicitaProMedium, semplicitaProLight, above } from "../styles"
 import FacebookIcon from "../assets/icons/facebook.svg"
 import InstagramIcon from "../assets/icons/instagram.svg"
 
@@ -11,7 +11,9 @@ const Header = () => {
     <Container>
       <div>
         <StyledLink to="/">
-          <Logo>Cirilo</Logo>
+          <Logo>
+            Cirilo<span>Filipino Kainan</span>
+          </Logo>
         </StyledLink>
       </div>
       <SocialIcons>
@@ -45,10 +47,14 @@ const Header = () => {
 }
 
 const Container = styled.header`
-  padding: 15px 40px;
+  padding: 15px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  ${above.tabletLarge`
+    padding: 15px 40px;
+  `}
 `
 
 const StyledLink = styled(Link)`
@@ -59,21 +65,31 @@ const StyledLink = styled(Link)`
 `
 
 const Logo = styled.div`
-  ${semplicitaProMedium}
+  ${semplicitaProMedium};
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 30px;
+
+  span {
+    display: none;
+
+    ${above.mobile`
+      ${semplicitaProLight};
+      display: inline-block;
+      font-size: 12px;
+      position: relative;
+      top: -5px;
+      left: 10px;
+    `}
+  }
 `
 
 const SocialIcons = styled.ul`
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   flex-grow: 1;
   text-align: center;
-  padding: 0;
-  margin: 0;
 
   li {
     margin-left: 20px;

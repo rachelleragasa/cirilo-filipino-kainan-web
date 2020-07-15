@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "semplicitaprosemibold";
+  src: url("../assets/fonts/semplicitaprosemibold.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaprosemibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitapromediumitalic";
+  src: url("../assets/fonts/semplicitapromediumitalic.woff2") format("woff2"),
+    url("../assets/fonts/semplicitapromediumitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitaprobolditalic";
+  src: url("../assets/fonts/semplicitaprobolditalic.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaprobolditalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitaprolight";
+  src: url("../assets/fonts/semplicitaprolight.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaprolight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitaprosemibolditalic";
+  src: url("../assets/fonts/semplicitaprosemibolditalic.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaprosemibolditalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitapromedium";
+  src: url("../assets/fonts/semplicitapromedium.woff2") format("woff2"),
+    url("../assets/fonts/semplicitapromedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitaprolightitalic";
+  src: url("../assets/fonts/semplicitaprolightitalic.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaprolightitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitaproregular";
+  src: url("../assets/fonts/semplicitaproregular.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaproregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitaproitalic";
+  src: url("../assets/fonts/semplicitaproitalic.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaproitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "semplicitaprobold";
+  src: url("../assets/fonts/semplicitaprobold.woff2") format("woff2"),
+    url("../assets/fonts/semplicitaprobold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,7 +1,7 @@
 import { css } from "styled-components"
 
 export const breakpoint = {
-  smallMobile: "360px",
+  smallMobile: "320px",
   mobile: "640px",
   tablet: "768px",
   tabletLarge: "1024px",
