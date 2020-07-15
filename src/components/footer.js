@@ -55,7 +55,6 @@ const FooterInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 40px;
 
   ${above.tabletLarge`
     flex-direction: row;

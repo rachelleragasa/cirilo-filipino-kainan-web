@@ -20,7 +20,8 @@ const IndexPage = () => (
     </Parallax>
     <Section>
       <ShortText>
-        A humble unpretentious eatery serving Cirilo's take on classic hearty
+        Located in East London’s Cable Street, Cirilo Filipino Kainan is a
+        humble unpretentious eatery serving Cirilo's take on classic hearty
         Filipino Food.
       </ShortText>
     </Section>
