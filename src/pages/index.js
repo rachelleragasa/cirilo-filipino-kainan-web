@@ -31,8 +31,8 @@ const IndexPage = () => (
     <Section>
       <h2>Our Menu</h2>
       <p>
-        We are currently open for collection only. We hope to welcome dine-in
-        customers soon.
+        We are currently open for temporary collection only. We hope to welcome
+        dine-in customers soon.
       </p>
       <TakeAwayMenu
         href={takeawaymenu}
