@@ -59,14 +59,14 @@ const GlobalStyles = createGlobalStyle`
 		margin: 0 0 20px 0;
 
 		${above.tabletLarge`
-			font-size: 45px;
+			font-size: 34px;
 			margin: 0 0 40px 0;
 		`}
 	}
 
 	h3 {
 		${semplicitaProSemiBold};
-		font-size: 30px;
+		font-size: 36px;
 		margin: 0 0 15px 0;
 
 		${above.tabletLarge`
