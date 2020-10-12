@@ -4,8 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import background from "../images/coffee-shop-exterior.jpg"
 import background2 from "../images/coffee-landscape-fd7627dd1a3030240869c74bc496bda8.jpg"
-import MenuLink from "../assets/docs/cirilo-filipino-kainan-takeaway-menu.pdf"
-import dietaryadvice from "../assets/docs/cirilo-filipino-kainan-dietary-advice.pdf"
+import MenuLink from "../assets/menu/food-and-drinks.pdf"
+import dietaryadvice from "../assets/menu/cirilo-filipino-kainan-dietary-advice.pdf"
 import interior from "../images/cirilo-interior.jpg"
 import outside from "../images/cirilo-outside.jpg"
 import foodShot from "../images/all-food-high-view.jpg"
@@ -31,14 +31,8 @@ const IndexPage = () => (
     </Parallax>
     <Section>
       <h2>Our Menu</h2>
-      <h6>Eat Out to Help Out</h6>
-      <p>
-        Enjoy a 50% discount on food or non-alcoholic drinks (up to a maximum of
-        £10 discount per diner) when you dine in, Tuesday and Wednesday
-        throughout August… And, you can come back as many times as you like.
-      </p>
       <Menu href={MenuLink} target="_blank" rel="noopener noreferrer">
-        Dinner Menu
+        Food and Drinks Menu
         <div></div>
       </Menu>
       <h6>Takeaway & Delivery</h6>
@@ -141,7 +135,7 @@ const Menu = styled.a`
   div {
     margin-bottom: 30px;
     border-bottom: 1px solid ${color.black};
-    width: 102px;
+    width: 175px;
   }
 `
 
