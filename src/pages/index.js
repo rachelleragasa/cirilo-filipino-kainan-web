@@ -2,10 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import background from "../images/coffee-shop-exterior.jpg"
-import background2 from "../images/coffee-landscape-fd7627dd1a3030240869c74bc496bda8.jpg"
 import MenuLink from "../assets/menu/food-and-drinks.pdf"
-import dietaryadvice from "../assets/menu/cirilo-filipino-kainan-dietary-advice.pdf"
 import interior from "../images/cirilo-interior.jpg"
 import outside from "../images/cirilo-outside.jpg"
 import foodShot from "../images/all-food-high-view.jpg"
@@ -104,11 +101,6 @@ const Section = styled.section`
   margin: 0 auto;
   padding: 80px 0;
 `
-const PhotoGallery = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-`
 
 const Menu = styled.a`
   color: ${color.black};
@@ -123,21 +115,6 @@ const Menu = styled.a`
     margin-bottom: 30px;
     border-bottom: 1px solid ${color.black};
     width: 175px;
-  }
-`
-
-const DietaryAdvice = styled.a`
-  color: ${color.black};
-
-  &:active,
-  &:focus,
-  &:visited {
-    color: ${color.black};
-  }
-  div {
-    margin-bottom: 30px;
-    border-bottom: 1px solid ${color.black};
-    width: 240px;
   }
 `
 
