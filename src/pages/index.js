@@ -21,7 +21,7 @@ const IndexPage = () => {
         </ShortText>
       </Section>
       <StyledParallax bgImage={food} strength={500}>
-        <div style={{ height: 550 }}></div>
+        <div style={{ height: 350 }}></div>
       </StyledParallax>
       <Section id="menu">
         <h2>Our Menu</h2>
@@ -37,7 +37,7 @@ const IndexPage = () => {
         </p>
       </Section>
       <StyledParallax bgImage={food2} strength={500}>
-        <div style={{ height: 550 }}></div>
+        <div style={{ height: 350 }}></div>
       </StyledParallax>
       <Section id="book">
         <h2>Bookings</h2>
@@ -131,7 +131,7 @@ const StyledParallax = styled(Parallax)`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(32, 23, 19, 0.7);
+    background: rgba(32, 23, 19, 0.5);
   }
 `
 
