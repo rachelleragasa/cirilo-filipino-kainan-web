@@ -46,13 +46,13 @@ const Header = () => {
 }
 
 const Container = styled.header`
-  padding: 15px 20px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
 
   ${above.tabletLarge`
-    padding: 15px 40px;
+    padding: 10px 40px;
   `}
 `
 
@@ -67,7 +67,7 @@ const Logo = styled.div`
   ${semplicitaProMedium};
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 30px;
+  font-size: 18px;
 
   span {
     display: none;
@@ -75,9 +75,9 @@ const Logo = styled.div`
     ${above.mobile`
       ${semplicitaProLight};
       display: inline-block;
-      font-size: 12px;
+      font-size: 8px;
       position: relative;
-      top: -5px;
+      top: -4px;
       left: 10px;
     `}
   }
@@ -95,7 +95,7 @@ const SocialIcons = styled.ul`
   }
 
   img {
-    width: 20px;
+    width: 16px;
   }
 `
 
