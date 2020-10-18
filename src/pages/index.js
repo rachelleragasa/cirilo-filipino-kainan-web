@@ -41,19 +41,6 @@ const IndexPage = () => (
         hearty, filipino food from our kitchen to yours. But you can still give
         us a call to order for collection.
       </p>
-      <h6>Dietary & Allergy Advice</h6>
-      <p>
-        We are committed to serving all our valued customers fresh and hearty
-        food.{" "}
-      </p>
-      <DietaryAdvice
-        href={dietaryadvice}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Dietary and Allergy Information
-        <div></div>
-      </DietaryAdvice>
     </Section>
     <Parallax bgImage={foodShot} strength={500}>
       <div style={{ height: 500 }}></div>
