@@ -20,9 +20,9 @@ const Footer = () => (
         <p>
           Mon - closed
           <br />
-          Tues / 6pm - 10pm
+          Tues / 6pm - 10.30pm
           <br />
-          Wed - Sun / 5pm - 10pm
+          Wed - Sun / 5.30pm - 10.30pm
         </p>
       </FooterColumn>
       <FooterColumn>
