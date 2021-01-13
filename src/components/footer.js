@@ -18,11 +18,11 @@ const Footer = () => (
       <FooterColumn>
         <h3>Hours</h3>
         <p>
-          Mon - closed
+          Mon - Tues - closed
           <br />
-          Tues / 6pm - 10.30pm
+          Wed - Fri / 5.30pm - 10.00pm
           <br />
-          Wed - Sun / 5.30pm - 10.30pm
+          Sat - Sun / 12.00pm - 10.00pm
         </p>
       </FooterColumn>
       <FooterColumn>

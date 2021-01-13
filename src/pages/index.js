@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import MenuLink from "../assets/menu/food-and-drinks.pdf"
+import MenuLink from "../assets/menu/menu.pdf"
 import food from "../images/pouring-sauce.jpg"
 import food2 from "../images/stick-balls.jpg"
 
