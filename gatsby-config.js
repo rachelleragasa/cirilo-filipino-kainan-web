@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Cirilo Filipino Kainan`,
+    title: `Cirilo Filipino Kainan - A family-owned eatery serving Filipino food in London`,
     description: `A humble, unpretentious, family-owned eatery serving Cirilo's take on classic hearty Filipino food.`,
     author: `Rachelle Ragasa`,
   },

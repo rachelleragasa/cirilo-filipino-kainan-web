@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
 		${semplicitaProLight};
 		font-size: 18px;
 		line-height: 30px;
-		background-color: #fcfbf7;
+		background-color: #fff;
 	}
 
 	main {

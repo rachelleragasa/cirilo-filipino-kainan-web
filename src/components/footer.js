@@ -1,92 +1,103 @@
 import React from "react"
 import styled from "styled-components"
-import { above, color, greyBackground, semplicitaProMedium } from "../styles"
+
+import { above, color, whiteBackground, semplicitaProMedium } from "../styles"
+import pin from "../assets/icons/pin.svg"
+import phone from "../assets/icons/phone.svg"
+import email from "../assets/icons/email.svg"
 
 const Footer = () => (
   <Container>
     <FooterInfo>
-      <FooterColumn>
-        <h3>Where are we?</h3>
-        <p>
-          4 Cable St,
-          <br />
-          Whitechapel,
-          <br />
-          London E1 8J
-        </p>
-      </FooterColumn>
-      <FooterColumn>
-        <h3>Hours</h3>
-        <p>
-          Mon - Tues - closed
-          <br />
-          Wed - Fri / 5.30pm - 10.00pm
-          <br />
-          Sat - Sun / 12.00pm - 10.00pm
-        </p>
-      </FooterColumn>
-      <FooterColumn>
-        <h3>Contact Us</h3>
-        <a href="tel:020 7702 2299">020 7702 2299</a>
-        <a href="mailto:eat@cirilofilipinokainan.co.uk">
-          eat@cirilofilipinokainan.co.uk
-        </a>
-      </FooterColumn>
+      <div>
+        <Link
+          href="https://g.page/cirilofilipinokainan?share"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={pin} alt="Get directions to Cirilo Filipino Kainan" />
+          <p>Directions</p>
+        </Link>
+      </div>
+      <div>
+        <Link
+          href="tel:+442077022299"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={phone} alt="Call us to make a reservation" />
+          <p>Contact Us</p>
+        </Link>
+      </div>
+      <div>
+        <Link
+          href="mailto:eat@cirilofilipinokainan.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={email} alt="Email us to make a reservation" />
+          <p>Email Us</p>
+        </Link>
+      </div>
     </FooterInfo>
-    <div>© {new Date().getFullYear()} Cirilo Filipino Kainan</div>
+    <CopyRight>© {new Date().getFullYear()} Cirilo Filipino Kainan</CopyRight>
   </Container>
 )
 
 const Container = styled.footer`
   height: auto;
-  padding: 40px 20px 20px 20px;
-  text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 2px;
-  color: ${color.white};
-  ${greyBackground};
+  letter-spacing: 1.5px;
+  color: ${color.black};
+  ${whiteBackground};
   text-align: center;
 
   ${above.mobile`
     font-size: 14px;
-  `}
-
-  ${above.tabletLarge`
-    padding: 40px 40px 20px 40px;
   `}
 `
 
 const FooterInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 20px auto;
+  border-top: 1px solid #e0e0e0;
+  max-width: 768px;
+  padding: 40px 20px 20px 20px;
 
   ${above.tabletLarge`
     flex-direction: row;
-    width: 900px;
     justify-content: space-between;
+    padding: 40px 40px 20px 40px;
   `}
 
-  h3 {
-    ${semplicitaProMedium};
-    font-size: 20px;
-    line-height: 24px;
+  img {
+    width: 24px;
+    height: 24px;
   }
 
-  a {
-    display: block;
-    font-size: 12px;
-    line-height: 30px;
-    color: ${color.white};
+  div {
+    margin: 10px 0;
+  }
 
-    ${above.mobile`
-      font-size: 14px;
-    `}
+  p {
+    ${semplicitaProMedium};
+    margin: 0;
+    color: ${color.black};
   }
 `
 
-const FooterColumn = styled.div`
-  margin-bottom: 20px;
+const Link = styled.a`
+  &:active,
+  &:visited {
+    color: ${color.black};
+  }
+`
+
+const CopyRight = styled.div`
+  ${semplicitaProMedium};
+  color: ${color.grey};
+  padding: 20px 0 30px 0;
 `
 
 export default Footer
