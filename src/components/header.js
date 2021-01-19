@@ -1,7 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { semplicitaProMedium, semplicitaProLight, above } from "../styles"
+import {
+  semplicitaProMedium,
+  semplicitaProLight,
+  above,
+  color,
+} from "../styles"
 import FacebookIcon from "../assets/icons/facebook.svg"
 import InstagramIcon from "../assets/icons/instagram.svg"
 
@@ -50,6 +55,10 @@ const Container = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 
   ${above.tabletLarge`
     padding: 10px 40px;
@@ -68,6 +77,7 @@ const Logo = styled.div`
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 18px;
+  color: ${color.white};
 
   span {
     display: none;
