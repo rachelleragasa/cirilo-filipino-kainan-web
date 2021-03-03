@@ -102,9 +102,13 @@ const IndexPage = () => {
 
 const Section = styled.section`
   max-width: 1200px;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
   padding: 80px 0;
+
+  ${above.tabletLarge`
+    width: 65%;
+  `}
 `
 
 const Menu = styled.a`

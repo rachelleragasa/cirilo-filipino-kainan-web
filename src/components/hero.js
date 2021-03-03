@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 import Img from "gatsby-image"
 
-import { above, color, semplicitaProBold } from "../styles"
+import { above, color, semplicitaProBold, semplicitaProMedium } from "../styles"
 
 const Hero = () => {
     const data = useStaticQuery(graphql`
@@ -19,39 +19,41 @@ const Hero = () => {
   `)
   
     return (
-        <>
-            <HeroImg
-                fluid={data.hero.childImageSharp.fluid}
-                alt="High view of food on a table"
-            />
+      <Container>
+          <HeroImg
+              fluid={data.hero.childImageSharp.fluid}
+              alt="High view of food on a table"
+          />
+          <HeroText>
             <HeroSubtext>
-                4 Cable Street
-                <br />
-                Whitechapel
-                <br />
-                London
-                <br />
-                E1 8JG
+                4 Cable Street — London — E1 8JG
             </HeroSubtext>
-            <HeroLinks>
-                <li>
-                <a href="#menu">Menu</a>
-                </li>
-                <li>
-                <a href="#book">Book Now</a>
-                </li>
-            </HeroLinks>
-        </>
+            <nav role="navigation">
+              <HeroLinks>
+                  <li>
+                  <a href="#menu">Menu</a>
+                  </li>
+                  <li>
+                  <a href="#book">Book</a>
+                  </li>
+              </HeroLinks>
+            </nav>
+          </HeroText>
+      </Container>
     )
 }
 
-
-const HeroImg = styled(Img)`
-  height: 80vh;
+const Container = styled.div`
+  position: relative;
+  height: 90vh;
 
   ${above.tabletLarge`
     height: 100vh;
   `}
+`
+
+const HeroImg = styled(Img)`
+  height: 100%;
 
   &::after {
     content: "";
@@ -60,68 +62,82 @@ const HeroImg = styled(Img)`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(32, 23, 19, 0.7);
+    background: rgba(43, 36, 33, 0.6);
   }
 `
 
-const HeroSubtext = styled.p`
+const HeroText = styled.div`
   position: absolute;
-  top: 25vh;
-  left: 0;
+  top: calc(90vh - 380px);
   right: 0;
+  left: 0;
+`
+
+const HeroSubtext = styled.p`
   color: ${color.white};
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
   text-align: center;
   padding: 0 20px;
 
   ${above.tabletLarge`
-    font-size: 24px;
-    line-height: 48px;
-    top: 30vh;
+    font-size: 18px;
   `}
 `
 
 const HeroLinks = styled.ul`
   list-style: none;
-  position: absolute;
-  top: 45vh;
-  left: 0;
-  right: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 
-  ${above.tablet`
-    flex-direction: row;
-  `}
-
   ${above.tabletLarge`
-    top: 55vh;
+    top: 65vh;
   `}
 
   li {
-    border: 1px solid ${color.white};
-    padding: 10px;
+    padding: 0 10px;
     text-align: center;
     margin: 20px;
+    cursor: pointer;
 
     ${above.tablet`
       width: 250px;
     `}
 
-    &:hover {
-      background: rgba(255, 255, 255, 0.3);
-      pointer: pointer;
-    }
-
     a {
+      position: relative;
       text-decoration: none;
       color: ${color.white};
       text-transform: uppercase;
-      ${semplicitaProBold};
-      letter-spacing: 4px;
+      ${semplicitaProMedium};
+      letter-spacing: 2px;
+      font-size: 48px;
+
+      ${above.tabletLarge`
+        font-size: 56px;
+      `}
+
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover {
+        &:after {
+          width: 100%; 
+          left: 0; 
+        }
+      }
     }
   }
 `
