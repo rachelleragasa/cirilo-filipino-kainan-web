@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+
 import {
   semplicitaProMedium,
   semplicitaProLight,
@@ -13,13 +14,11 @@ import InstagramIcon from "../assets/icons/instagram.svg"
 const Header = () => {
   return (
     <Container>
-      <div>
-        <StyledLink to="/">
-          <Logo>
-            Cirilo<span>Filipino Kainan</span>
-          </Logo>
-        </StyledLink>
-      </div>
+      <StyledLink to="/">
+        <Logo>
+          Cirilo<span>Filipino Kainan</span>
+        </Logo>
+      </StyledLink>
       <SocialIcons>
         <li>
           <a

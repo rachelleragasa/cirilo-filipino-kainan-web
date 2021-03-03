@@ -9,7 +9,7 @@ import {
 } from "../styles"
 
 const GlobalStyles = createGlobalStyle`
-	${normalize}
+	${normalize};
 	
 	html, body {
 		height: 100%

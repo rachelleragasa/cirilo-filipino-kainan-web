@@ -61,7 +61,7 @@ const FooterInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin: 20px auto;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid ${color.lightGrey};
   max-width: 768px;
   padding: 40px 20px 20px 20px;
 
