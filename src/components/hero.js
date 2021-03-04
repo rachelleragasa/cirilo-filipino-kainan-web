@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 import Img from "gatsby-image"
 
-import { above, color, semplicitaProBold, semplicitaProMedium } from "../styles"
+import { above, color, semplicitaProBold, semplicitaProMedium, semplicitaProRegular } from "../styles"
 
 const Hero = () => {
     const data = useStaticQuery(graphql`
@@ -26,18 +26,16 @@ const Hero = () => {
           />
           <HeroText>
             <HeroSubtext>
-                4 Cable Street — London — E1 8JG
+                4 Cable Street — Whitechapel, London — E1 8JG
             </HeroSubtext>
-            <nav role="navigation">
-              <HeroLinks>
-                  <li>
-                  <a href="#menu">Menu</a>
-                  </li>
-                  <li>
-                  <a href="#book">Book</a>
-                  </li>
+              <HeroLinks role="navigation">
+                  <div>
+                    <a href="#menu">Menu</a>
+                  </div>
+                  <div>
+                    <a href="#book">Book</a>
+                  </div>
               </HeroLinks>
-            </nav>
           </HeroText>
       </Container>
     )
@@ -68,55 +66,59 @@ const HeroImg = styled(Img)`
 
 const HeroText = styled.div`
   position: absolute;
-  top: calc(90vh - 380px);
+  top: 32vh;
   right: 0;
   left: 0;
+
+  ${above.tabletLarge`
+    top: 36vh;
+  `}
 `
 
 const HeroSubtext = styled.p`
   color: ${color.white};
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
   text-align: center;
   padding: 0 20px;
+  line-height: 1.3em;
 
   ${above.tabletLarge`
     font-size: 18px;
   `}
 `
 
-const HeroLinks = styled.ul`
+const HeroLinks = styled.nav`
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+
+  ${above.mobile`
+    flex-direction: row;
+  `}
 
   ${above.tabletLarge`
     top: 65vh;
   `}
 
-  li {
-    padding: 0 10px;
+  div {
     text-align: center;
-    margin: 20px;
     cursor: pointer;
-
-    ${above.tablet`
-      width: 250px;
-    `}
+    margin: 0 20px;
 
     a {
       position: relative;
       text-decoration: none;
       color: ${color.white};
       text-transform: uppercase;
-      ${semplicitaProMedium};
+      ${semplicitaProRegular};
       letter-spacing: 2px;
-      font-size: 48px;
+      font-size: 36px;
+      line-height: 47px;
 
-      ${above.tabletLarge`
-        font-size: 56px;
+      ${above.mobile`
+        font-size: 5.625vw;
       `}
 
       &:after {
