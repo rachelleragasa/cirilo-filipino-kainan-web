@@ -5,8 +5,9 @@ import SEO from "../components/seo"
 import MenuLink from "../assets/menu/menu.pdf"
 import food from "../images/pouring-sauce.jpg"
 import food2 from "../images/stick-balls.jpg"
+import food3 from '../images/chicken-adobo.jpg'
 
-import { above, color } from "../styles"
+import { above, color, semplicitaProMedium } from "../styles"
 import { Parallax } from "react-parallax"
 
 const IndexPage = () => {
@@ -42,36 +43,14 @@ const IndexPage = () => {
       <Section id="book">
         <h2>Bookings</h2>
         <p>
-          To book a table with us, please give us a call on{" "}
-          <a href="tel:020 7702 2299">020 7702 2299</a> or send us an email at{" "}
-          <a href="mailto:eat@cirilofilipinokainan.co.uk">
-            eat@cirilofilipinokainan.co.uk
-          </a>
-          . We accept walk-ins however, due to restricted numbers we strongly
-          advise you to book in advance.
-        </p>
-        <p>
-          Your safety and comfort are our top priority and as such, in-line with
-          Government protocols have implemented the following measures:
-        </p>
-        <h6>Social Distancing</h6>
-        <p>Maximum of 6 people when dining in from the same household.</p>
-        <p>
-          Enforced social distancing with all tables set at a minimum of 1 metre
-          apart.
-        </p>
-        <p>
-          We request that diners wear a face mask upon entry until sat a table,
-          and would please wear one at all times when not sat at their table (ie
-          when visiting restrooms etc).{" "}
-        </p>
-        <p>
-          Guests awaiting tables might be asked to wait outside of the
-          restaurant if social distancing and/or occupancy levels require us to
-          do so.
+          Due to no available outdoor seating, we are unable to take bookings at this time.
+          We hope to reopen our doors again soon for dining in.
         </p>
         <h6>Health & Safety Measures</h6>
-        <p>Building upon our existing cleaning and sanitising measures:</p>
+        <p>
+          Your safety and comfort are our top priority and as such, in-line with
+          Government protocols and building upon our existing cleaning and sanitising measures have implemented the following:
+        </p>
         <p>
           Alcohol-based hand sanitisers are available for guest use - throughout
           the restaurant.
@@ -95,6 +74,15 @@ const IndexPage = () => {
             eat@cirilofilipinokainan.co.uk
           </a>
         </p>
+      </Section>
+      <StyledParallax bgImage={food3} strength={500}>
+        <div style={{ height: 350 }}></div>
+      </StyledParallax>
+      <Section id="open-hours">
+        <h2>Opening Hours</h2>
+        <p>Sunday - Tuesday / Closed</p>
+        <p>Wednesday - Friday / 5.30pm - 10pm</p>
+        <p>Saturday / 12pm - 10pm</p>
       </Section>
     </Layout>
   )
