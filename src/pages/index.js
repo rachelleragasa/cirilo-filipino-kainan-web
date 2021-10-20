@@ -43,46 +43,57 @@ const IndexPage = () => {
       <Section id="book">
         <h2>Bookings</h2>
         <p>
-          Due to no available outdoor seating, we are unable to take bookings at this time.
-          We hope to reopen our doors again soon for dining in.
+          To book a table with us, please give us a call on <Link href="tel:+442077022299"
+          target="_blank"
+          rel="noopener noreferrer">020 7702 2299</Link> or send us an email
+          at <Link
+          href="mailto:eat@cirilofilipinokainan.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >eat@cirilofilipinokainan.co.uk.</Link> We accept walk-ins however, due to restricted
+          numbers we strongly advise you to book in advance.
+        </p>
+        <p>
+          Your safety and comfort are our top priority and as such, in-line with Government
+          protocols have implemented the following measures:
+        </p>
+        <h6>Social Distancing</h6>
+        <p>Maximum of 6 people or 2 households of any size.</p>
+        <p>Enforced social distancing with all tables set at a minimum of 1 metre apart.</p>
+        <p>
+          We request that diners wear a face mask upon entry until sat a table, and would please
+          wear one at all times when not sat at their table (ie when visiting restrooms etc).
+        </p>
+        <p>
+          Guests awaiting tables might be asked to wait outside of the restaurant if social distancing
+          and/or occupancy levels require us to do so.
         </p>
         <h6>Health & Safety Measures</h6>
         <p>
-          Your safety and comfort are our top priority and as such, in-line with
-          Government protocols and building upon our existing cleaning and sanitising measures have implemented the following:
+          Your safety and comfort are our top priority and as such, in-line with Government protocols
+          and building upon our existing cleaning and sanitising measures have implemented the following:
         </p>
+        <p>Alcohol-based hand sanitisers are available for guest use - throughout the restaurant.</p>
+        <p>Tables, tableware and chairs are thoroughly sanitised between each use prior to seating the next table.</p>
+        <p>All on our team abide by rigorous personal hygiene protocols and wear suitable personal protective equipment.</p>
         <p>
-          Alcohol-based hand sanitisers are available for guest use - throughout
-          the restaurant.
+          Temperature checks will be taken upon arrival and contact details are required for all dining in and
+          if necessary will be used to support Government track and trace requirements.
         </p>
-        <p>
-          Tables, tableware and chairs are thoroughly sanitised between each use
-          prior to seating the next table.
-        </p>
-        <p>
-          All on our team abide by rigorous personal hygiene protocols and wear
-          suitable personal protective equipment.
-        </p>
-        <p>
-          Temperature checks will be taken upon arrival and contact details are
-          required for all dining in and if necessary will be used to support
-          Government track and trace requirements.
-        </p>
-        <p>
-          If you have any other queries, please do not hesitate to contact us{" "}
-          <a href="eat@cirilofilipinokainan.co.uk">
-            eat@cirilofilipinokainan.co.uk
-          </a>
-        </p>
+        <p>If you have any other queries, please do not hesitate to contact us <Link
+          href="mailto:eat@cirilofilipinokainan.co.uk"
+          target="_blank"
+          rel="noopener noreferrer">eat@cirilofilipinokainan.co.uk</Link></p>
       </Section>
       <StyledParallax bgImage={food3} strength={500}>
         <div style={{ height: 350 }}></div>
       </StyledParallax>
       <Section id="open-hours">
         <h2>Opening Hours</h2>
-        <p>Sunday - Tuesday / Closed</p>
-        <p>Wednesday - Friday / 5.30pm - 10pm</p>
-        <p>Saturday / 12pm - 10pm</p>
+        <p>Monday / Closed</p>
+        <p>Tuesday / 6pm - 10:30pm</p>
+        <p>Wednesday - Saturday / 12pm - 10:30pm</p>
+        <p>Sunday / 12pm - 10pm</p>
       </Section>
     </Layout>
   )
@@ -112,6 +123,13 @@ const Menu = styled.a`
     margin-bottom: 30px;
     border-bottom: 1px solid ${color.black};
     width: 175px;
+  }
+`
+
+const Link = styled.a`
+  &:active,
+  &:visited {
+    color: ${color.black};
   }
 `
 
